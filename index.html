@@ -28,6 +28,7 @@
                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+               <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
            </ul> 
         </div>
@@ -45,7 +46,7 @@
                  <h1 class="home__title">
                      Hi, <br>I'am <span class="home__title-color">Victory</span><br> Web Designer
                  </h1>
-                 <a href="#" class="button" >Contact</a>
+                 <a href="#contact" class="button" >Contact</a>
              </div>
 
              <div class="home__social">
@@ -54,8 +55,10 @@
                  <a href="#" class="home__social-icon"><i class="bx bxl-github"></i></a>
              </div>
 
-             <div class="home__img">
-                 <img src="./assets/img/avatar.jpg" alt="">
+             <div class="home__img ">
+                 <div class="rotating"></div>
+                
+                 <img src="./assets/img/rotate.png" alt="">
              </div>
          </section>
 
@@ -184,17 +187,53 @@
              </div>
          </section>
 
+         <!--services-->
+         <section class="services section" id="services">
+             <h2 class="section-title">What I can do for you</h2>
+
+             <div class="work__container bd-grid">
+                <div class="work__img">
+                    <img src="./assets/img/works1.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="./assets/img/works2.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="./assets/img/works3.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="./assets/img/works3.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="./assets/img/Capture.PNG" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="./assets/img/2nd.PNG" alt="">
+                </div>
+             </div>
+         </section>
+
          <!-- Contact -->
          <section class="contact section" id="contact">
              <h2 class="section-title">Contact Me</h2>
              <div class="contact__container bd-grid">
-                 <form action="" class="contact__form">
-                     <input type="text" placeholder="Name" class="contact__input">
-                     <input type="text" placeholder="Email" class="contact__input">
-                     <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-
-                     <input type="button" value="Submit" class="contact__button button">
+                 <form action="https://formspree.io/f/mbjpkwvk" method="POST" class="contact__form" id="my-form">
+                   <div>
+                    <label for="firstName"></label>
+                     <input name="firstName" type="text" placeholder="Name" class="contact__input" required>
+                   </div>
+                   <div>  
+                   <label for="email"></label>
+                     <input name="email" type="text" placeholder="Email" class="contact__input" required>
+                   </div>
+                   <div>
+                     <label for="message"></label>
+                     <textarea name="message" id="" cols="0" rows="10" class="contact__input" required></textarea>
+                   </div>
+                     <button type="submit" class="contact__button button" >Submit</button>
+                     <div id="success"></div>
                  </form>
+                 
              </div>
          </section>
 

@@ -145,6 +145,7 @@ img{
         background-color: var(--second-color);
         transition: .5s;
     }
+   
 }
 
 .nav__item{
@@ -237,6 +238,33 @@ img{
     bottom: 0;
     width: 200px;
    
+}
+
+/* my addition for eye effect */
+.rotating{
+    
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background: #1e1c1c;
+    right: 30%;
+    top: 40%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    display: block;
+    
+}
+
+.rotating::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    height: 30%;
+    width: 30%;
+    border-radius: 50%;
+    background: #fff;
 }
 
 /* buttons */
@@ -351,6 +379,10 @@ img{
 .work{
     text-align: center;
 }
+.services{
+    text-align: center;
+}
+
 
 .work__container{
     row-gap: 2rem;
@@ -430,6 +462,11 @@ img{
 @media screen and (min-width: 768px){
     body{
         margin: 0;
+    }
+
+    .rotating{
+        height: 23px;
+        width: 23px;
     }
 
     .section{
@@ -531,5 +568,42 @@ img{
 
     .home__img{
         right: 10%;
+    }
+}
+
+
+/* additional */
+#success{
+    font-size: var(--font-semi);
+   
+    width: 150px;
+    text-align: center;
+    border-radius: .5rem;
+}
+
+ #success.suc{
+    background-color: rgb(119, 201, 119);
+    animation: status 4s ease forwards;
+    color: #000;
+}
+
+.err{
+    background-color: rgb(247, 71, 71);
+    color: #fff;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    50%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
     }
 }
