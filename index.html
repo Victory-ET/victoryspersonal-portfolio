@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@200&display=swap" rel="stylesheet">
     
     
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="./assets/favicon_io/site.webmanifest">
 </head>
 <body>
 
@@ -44,7 +48,7 @@
          <section class="home bd-grid" id="home">
              <div class="home__data">
                  <h1 class="home__title">
-                     Hi, <br>I'am <span class="home__title-color">Victory</span><br> Web Designer
+                     Hi, <br>I'am <span class="home__title-color">Victory</span><br>A Web Developer
                  </h1>
                  <a href="#contact" class="button" >Contact</a>
              </div>
@@ -52,11 +56,12 @@
              <div class="home__social">
                  <a href="#" class="home__social-icon"><i class="bx bxl-behance"></i></a>
                  <a href="#" class="home__social-icon"><i class="bx bxl-linkedin"></i></a>
-                 <a href="#" class="home__social-icon"><i class="bx bxl-github"></i></a>
+                 <a href="https://github.com/victory-et/" target="_blank" class="home__social-icon"><i class="bx bxl-github"></i></a>
              </div>
 
              <div class="home__img ">
                  <div class="rotating"></div>
+                 <div class="rotating2"></div>
                 
                  <img src="./assets/img/rotate.png" alt="">
              </div>
@@ -68,12 +73,15 @@
 
             <div class="about__container bd-grid">
                 <div class="about__img">
-                    <img src="./assets/img/aa.jpg" alt="">
+                    <img src="./assets/img/aa2.jpg" alt="">
                 </div>
 
                 <div>
                     <h2 class="about__subtitle">I am Victory Tuduo</h2>
-                    <p class="about__text">A full stack software developer and designer. Love making UI designs, all about code and techie stuffs</p>
+                    <p class="about__text">Hi (once again), I'm a techie i love to build simple things as a hobby, while incorporating new ideas and design concepts to cross hurdles and challenges. I've a love for UI designs, web animations, graphics mockups and cool innovative user experiences.<br>
+                    Currently, I live and work in Delta while pursuing a degree in Computer Sc. at the Federal University of Port Harcourt, Nigeria<br><br>
+                Currently only working on interships while freelancing, open to job offers...
+                </p>
 
                 </div>
             </div>
@@ -154,7 +162,7 @@
                 
                 </div>
                 <div>
-            <img src="./assets/img/Capture2.PNG" alt="" class="skills__img">
+            <img src="./assets/img/hire.png" alt="" class="skills__img">
 
                 </div>
         </div>
@@ -167,22 +175,46 @@
 
              <div class="work__container bd-grid">
                 <div class="work__img">
-                    <img src="./assets/img/works1.jpg" alt="">
+                    <div id="overlay">
+                        <h6>A simple cbt</h6>
+                        <p>A simple website used to give random questions for a cbt generated from an api</p>
+                    </div>
+                    <img src="./assets/img/cbt.jpg" alt="">
+                    <a href="http://ocbt.netlify.app" target="_blank" class="visit-site">Visit site</a>
                 </div>
                 <div class="work__img">
-                    <img src="./assets/img/works2.jpg" alt="">
+                    <div id="overlay">
+                        <h6>Converge</h6>
+                        <p>A social media webapp developed my members in my department. Still in development</p>
+                    </div>
+                    <img src="./assets/img/converge site.PNG" alt="">
+                    <a  class="visit-site">coming soon</a>
                 </div>
                 <div class="work__img">
-                    <img src="./assets/img/works3.jpg" alt="">
+                    <div id="overlay">
+                        <h6>ui Design</h6>
+                    </div>
+                    <img src="./assets/img/ui1.PNG" alt="">
+                    
                 </div>
                 <div class="work__img">
-                    <img src="./assets/img/works3.jpg" alt="">
+                    <div id="overlay">
+                        <h6>mockups design
+                        </h6>
+                        </div>
+                    <img src="./assets/img/ui3.PNG" alt="">
                 </div>
                 <div class="work__img">
-                    <img src="./assets/img/Capture.PNG" alt="">
+                    <div id="overlay">
+                        <h6>ui design</h6>
+                    </div>
+                    <img src="./assets/img/ui2.png" alt="">
                 </div>
                 <div class="work__img">
-                    <img src="./assets/img/2nd.PNG" alt="">
+                    <div id="overlay">
+                        <h6>ui design</h6>
+                    </div>
+                    <img src="./assets/img/ui2.png" alt="">
                 </div>
              </div>
          </section>
@@ -191,8 +223,8 @@
          <section class="services section" id="services">
              <h2 class="section-title">What I can do for you</h2>
 
-             <div class="work__container bd-grid">
-                <div class="work__img">
+             <!-- <div class="work__container bd-grid"> -->
+                <!-- <div class="work__img">
                     <img src="./assets/img/works1.jpg" alt="">
                 </div>
                 <div class="work__img">
@@ -209,8 +241,56 @@
                 </div>
                 <div class="work__img">
                     <img src="./assets/img/2nd.PNG" alt="">
-                </div>
+                </div> -->
+             <!-- </div> -->
+             <div class="services">
+                 <div class="centralize">
+                 <div class="services-cont">
+                 <div class="card">
+                     <div class="face face1">  
+                         <div class="content">
+                             <img src="./assets/img/service1.png">
+                             <h3>Design</h3>
+                         </div>
+                     </div>
+                     <div class="face face2">  
+                        <div class="content">
+                            <p>Design amazing UI interfaces, logos and brandings</p>
+                            <a href="#contact">Inbox</a>
+                        </div>
+                     </div>
+                 </div>
+                 <div class="card">
+                     <div class="face face1">  
+                         <div class="content">
+                             <img src="./assets/img/service2.png">
+                             <h3>Code</h3>
+                         </div>
+                     </div>
+                     <div class="face face2">  
+                        <div class="content">
+                            <p>Code websites for different purposes ranging from simple static to full blown dynamic websites with backend services</p>
+                            <a href="#contact">Inbox</a>
+                        </div>
+                     </div>
+                 </div>
+                 <div class="card">
+                     <div class="face face1">  
+                         <div class="content">
+                             <img src="./assets/img/design alt.png">
+                             <h3>Graphics</h3>
+                         </div>
+                     </div>
+                     <div class="face face2">  
+                        <div class="content">
+                            <p>Make awesome modifications to pictures and add special effects to your videos</p>
+                            <a href="#contact">Inbox</a>
+                        </div>
+                     </div>
+                 </div>
              </div>
+            </div>
+            </div>
          </section>
 
          <!-- Contact -->
@@ -243,9 +323,9 @@
     <p class="footer__title">Victory Tuduo</p>
 
     <div class="footer__social">
-        <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
+        <a href="http://facebook.com/tuduovictory" target="_blank" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+        <a href="https://twitter.com/vhicktri" target="_blank" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+        <a href="https://twitter.com/vhicktri" target="_blank" class="footer__icon"><i class="bx bxl-twitter"></i></a>
     </div>
     <p>&#169; 2020 copyright all rights reserved</p>
 </footer>

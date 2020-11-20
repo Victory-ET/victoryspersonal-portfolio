@@ -145,6 +145,7 @@ img{
         background-color: var(--second-color);
         transition: .5s;
     }
+
    
 }
 
@@ -254,8 +255,32 @@ img{
     display: block;
     
 }
+.rotating2{
+    
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background: #1e1c1c;
+    left: 31%;
+    top: 42%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    display: block;
+    
+}
 
 .rotating::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    height: 30%;
+    width: 30%;
+    border-radius: 50%;
+    background: #fff;
+}
+.rotating2::before{
     content: '';
     position: absolute;
     top: 50%;
@@ -378,10 +403,11 @@ img{
 /* work */
 .work{
     text-align: center;
+    overflow: hidden;
 }
-.services{
+/* .services{
     text-align: center;
-}
+} */
 
 
 .work__container{
@@ -407,8 +433,69 @@ img{
     cursor: pointer;
 }
 
+/* addition for work section links*/
+.work__img a{
+    position: absolute;
+    font-size: var(--font-semi);
+    color: var(--first-color);
+    text-decoration: none;
+    bottom: 3px;
+}
+
+/* more addition for work section links description */
+#overlay{
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: inherit;
+    opacity: 1;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    animation:show 5s linear forwards;
+}
+
+@keyframes show{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    0%{
+        opacity: 0;
+    }
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+#overlay p{
+    font-size: .5rem;
+    padding: auto;
+}
+
+#overlay:hover{
+    display: none;
+}
+
+
 .work__img:hover img{
     transform: scale(1.5);
+}
+
+.work__img:hover #overlay{
+    display: none;
 }
 
 /* contact */
@@ -465,6 +552,10 @@ img{
     }
 
     .rotating{
+        height: 23px;
+        width: 23px;
+    }
+    .rotating2{
         height: 23px;
         width: 23px;
     }
@@ -565,6 +656,10 @@ img{
         margin-left: auto;
         margin-right: auto;
     }
+    #overlay p{
+        font-size: var(--normal-font-size);
+    }
+  
 
     .home__img{
         right: 10%;
@@ -605,5 +700,144 @@ img{
     100%{
         opacity: 0;
         pointer-events: none;
+    }
+}
+
+/* services section design */
+.centralize{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    /* addition */
+    overflow: hidden;
+}
+.services-cont{
+    margin: 0;
+    padding: 0;
+    min-height: 70vh;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: montserrat;
+    width: 100%;
+    position: relative;
+
+    
+}
+
+
+.card{
+    position: relative;
+}
+
+.card h3{
+    position: absolute;
+    top: 75%;
+    margin-left: 5px;
+    text-align: center;
+} 
+
+.face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+
+
+.face1{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+   
+}
+
+.card:hover .face.face1{
+    transform: translateY(0);
+   
+}
+
+.card:hover .face.face1 .content{
+    background: var(--first-color);
+    opacity: 1;
+}
+
+
+.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
+}
+.face1 .content:hover{
+    opacity: 1;
+    
+}
+
+.face.face1 .content img{
+    max-width: 150px;
+}
+
+ .face2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(14, 36, 49, .15);
+    transform: translateY(-100px);
+}
+
+.card:hover .face2{
+    transform: translateY(0);
+}
+
+.face2 p{
+    margin: 0;
+    padding: 0;
+}
+
+.face2 .content a {
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid var(--first-color);
+}
+
+.face2 .content a:hover{
+    background: var(--first-color);
+    color: #fff;
+}
+
+.face p {
+    font-size: var(--font-semi);
+    color: rgb(19, 18, 18);
+    font-weight: bold;
+}
+
+.face1 .content{
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* @media query for services section */
+@media screen and (max-width:937px){
+    .services-cont{
+        flex-direction: column;
     }
 }

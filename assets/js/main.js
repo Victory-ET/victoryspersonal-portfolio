@@ -70,6 +70,14 @@ function eyeball(){
     let radian = Math.atan2(event.pageX - x, event.pageY - y);
     let rotation = (radian * (180 / Math.PI) * -1) +270;
     eye.style.transform = "rotate("+rotation+"deg)"
+
+    const eye2 = document.querySelector(".rotating2");
+    let q = (eye2.getBoundingClientRect().left) + (eye2.clientWidth / 2);
+    let w = (eye2.getBoundingClientRect().top) + (eye2.clientHeight / 2);
+
+    let radian2 = Math.atan2(event.pageX - q, event.pageY - w);
+    let rotation2 = (radian2 * (180 / Math.PI) * -1) +270;
+    eye2.style.transform = "rotate("+rotation2+"deg)"
 }
 
 
@@ -88,7 +96,7 @@ window.addEventListener("DOMContentLoaded", function() {
       form.reset();
       status.classList.add('suc');
     //   button.style = "display: none ";
-      status.innerHTML = "Thanks!";
+      status.innerHTML = "Thanks!, email sent";
     }
 
     function error() {
