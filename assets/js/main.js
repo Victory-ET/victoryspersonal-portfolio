@@ -52,14 +52,14 @@ sr.reveal('.skills__data', {interval:200})
 sr.reveal('.skills__img', {delay:400})
 
 //scroll work
-sr.reveal('.work__img', {interval:200})
+//sr.reveal('.work__img', {interval:200})
 
 //addition for services scroll event
 sr.reveal('.card', {interval:200});
 
 
 //scroll contact
-sr.reveal('.contact__input', {interval:200})
+//sr.reveal('.contact__input', {interval:200})
 
 
 //addition
